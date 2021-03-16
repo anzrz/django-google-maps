@@ -3,7 +3,7 @@
 DEBUG = True
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Michael', 'michaell@xmpt.us'),
 )
 
 MANAGERS = ADMINS
@@ -26,7 +26,8 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'America/New_York'
+
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -90,6 +91,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ]
         },
     },
@@ -120,7 +122,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
     'django_google_maps',
     'sample',
     'django_google_maps.tests.test_app'
@@ -150,4 +152,4 @@ LOGGING = {
 }
 
 
-GOOGLE_MAPS_API_KEY = 'SAMPLE_KEY'
+GOOGLE_MAPS_API_KEY = 'AIzaSyD107PE05fgg_1SFa9n2iD7_G2FF-vbwj8'
