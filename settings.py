@@ -152,4 +152,4 @@ LOGGING = {
 }
 
 
-GOOGLE_MAPS_API_KEY = 'AIzaSyD107PE05fgg_1SFa9n2iD7_G2FF-vbwj8'
+GOOGLE_MAPS_API_KEY = 'provide-key-in-app-variable'
